@@ -3,8 +3,6 @@ let Emails = ["bruno@gmail.com", "margherita@gmail.com", "gino@gmail.com",
 
 let userEmail = document.getElementById("email");
 
-const List = document.querySelector("ol");
-
     log.addEventListener("click",
     function () {
         if (userEmail.value == Emails[0]) {
