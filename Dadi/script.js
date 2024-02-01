@@ -24,6 +24,8 @@ pcButton.addEventListener ("click",
             winner.innerHTML = "Turno Avversario!!";
         } else if (userDisplay.innerHTML > pcDisplay.innerHTML) { 
             winner.innerHTML = "Vince User!!";
+        } else if (userDisplay.innerHTML < pcDisplay.innerHTML) {
+            winner.innerHTML = "Vince Pc!!";
         } else{
             winner.innerHTML = "E' un Pareggio!!";
         }
@@ -33,7 +35,7 @@ userButton.addEventListener ("click",
     function() {
         userDisplay.innerHTML = userNumber;
 
-        if (pcDisplay.innerHTML > userDisplay.innerHTML) {
+        if (userDisplay.innerHTML < pcDisplay.innerHTML) {
             winner.innerHTML = "Vince Pc!!";
         } else if (pcDisplay.innerHTML == 0) { 
             winner.innerHTML = "Turno Avversario!!";
