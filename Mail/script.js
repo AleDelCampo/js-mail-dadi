@@ -1,18 +1,26 @@
-/*Mail
-Chiedi all’utente la sua email,
-controlla che sia nella lista di chi può accedere
-(qui quindi dovremmo creare da noi un array di email casuali),
-stampa un messaggio appropriato sull’esito del controllo.*/
-
-const Emails = ["bruno@gmail.com", "margherita@gmail.com", "gino@gmail.com", 
+let Emails = ["bruno@gmail.com", "margherita@gmail.com", "gino@gmail.com", 
 "alfio@gmail.com", "giacomo@gmail.com","clarabella@gmail.com"]
 
-const userEmail = document.getElementById("email");
+let userEmail = document.getElementById("email");
 
-log.addEventListener("click",
+const List = document.querySelector("ol");
+
+    log.addEventListener("click",
     function () {
-        document.getElementById("result").innerText = `${email.value}`;
+        if (userEmail.value == Emails[0]) {
+            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
+        } else if (userEmail.value == Emails[1]) {
+            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
+        } else if (userEmail.value == Emails[2]) {
+            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
+        } else if (userEmail.value == Emails[3]) {
+            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
+        } else if (userEmail.value == Emails[4]) {
+            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
+        } else if (userEmail.value == Emails[5]) {
+            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
+        } else {
+            document.getElementById("result").innerText = "Mi dispiacee, ma questo è un VIP Club!!";
+        }
     }
 )
-
- 
