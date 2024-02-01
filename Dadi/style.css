@@ -2,4 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color:aquamarine ;
 }
+
+button {
+    width: 200px;
+    height: 100px;
+}
+
+#dicepc {
+    font-size: 60px;
+    color: red;
+    position: relative;
+}
+
+#diceuser {
+    font-size: 60px;
+    color: blue;
+    position: relative;
+}
+
+#esite {
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 40px;
+}
+
+#pcnumber {
+    position: absolute;
+    top: 100px;
+    left: 126px;
+}
+
+#usernumber {
+    position: absolute;
+    top: 100px;
+    left: 126px;
+}
+
