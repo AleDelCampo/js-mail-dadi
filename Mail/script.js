@@ -1,24 +1,32 @@
-let Emails = ["bruno@gmail.com", "margherita@gmail.com", "gino@gmail.com", 
+const Emails = ["bruno@gmail.com", "margherita@gmail.com", "gino@gmail.com", 
 "alfio@gmail.com", "giacomo@gmail.com","clarabella@gmail.com"]
 
-let userEmail = document.getElementById("email");
+const loginButton = document.getElementById("log");
 
-    log.addEventListener("click",
-    function () {
-        if (userEmail.value == Emails[0]) {
-            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
-        } else if (userEmail.value == Emails[1]) {
-            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
-        } else if (userEmail.value == Emails[2]) {
-            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
-        } else if (userEmail.value == Emails[3]) {
-            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
-        } else if (userEmail.value == Emails[4]) {
-            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
-        } else if (userEmail.value == Emails[5]) {
-            document.getElementById("result").innerText = "Wow, sei uno dei nostri!!";
-        } else {
-            document.getElementById("result").innerText = "Mi dispiacee, ma questo è un VIP Club!!";
-        }
+loginButton.addEventListener("click", function(){
+
+    const userEmail = document.getElementById("email").value;
+
+    let myMails = false;
+
+    for (let i = 0; i < Emails.length; i++) {
+        if (Emails[i] == userEmail) {
+            myMails = true;
+        } 
     }
+    
+    let resultElement = document.querySelector("#result")
+    
+    if (myMails) {
+        resultElement.innerText = "Wow!! Sei proprio uno dei nostri!!"
+    } else {
+        resultElement.innerText = "Mi dispiace, questo è un VIP Club. Siì sicuro della tua Mail."
+    }
+}
 )
+
+
+
+
+
+
